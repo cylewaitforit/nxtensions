@@ -66,5 +66,6 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
-  }
+  },
+  "packageManager": "pnpm@8.6.12+sha1.a2f983fbf8f2531dc85db2a5d7f398063d51a6f3"
 }
