@@ -10,7 +10,7 @@ export async function checkExecutor(
   context: ExecutorContext
 ): Promise<{ success: boolean }> {
   const projectRoot =
-    context.projectsConfigurations.projects[context.projectName ?? ''].root;
+    context.projectsConfigurations.projects[context.projectName].root;
 
   try {
     const exitCode = await runCliCheck(context.root, projectRoot);
