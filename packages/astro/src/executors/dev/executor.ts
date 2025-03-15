@@ -12,7 +12,7 @@ export async function* devExecutor(
   context: ExecutorContext
 ): AsyncGenerator<{ baseUrl?: string; success: boolean }> {
   const projectRoot =
-    context.projectsConfigurations.projects[context.projectName ?? ''].root;
+    context.projectsConfigurations.projects[context.projectName].root;
 
   try {
     const success = await runCliDev(context.root, projectRoot, options);
